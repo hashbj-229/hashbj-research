@@ -114,7 +114,6 @@ M pour obtenir la parfaite sécurité. Toute réutilisation de
 𝐾
 K brise la sécurité (ex. Venona). 
 pages.cs.wisc.edu
-+1
 
 ## 3.1 Cas historique : Venona
 
@@ -160,7 +159,6 @@ arXiv
 
 Estimer la date où un ordinateur quantique cryptanalytiquement pertinent (CRQC) existera est incertain. Des sondages d’experts et des études de la filière placent la probabilité significative d’un CRQC dans les années 2030 (milieu → fin 2030s) ; d’autres travaux (optimisations d’algorithmes et progrès matériels) font varier l’estimation sensiblement. L’idée stratégique "store now, decrypt later" est reconnue par NIST comme un vecteur d’attaque plausible (collecte aujourd’hui, déchiffrement demain). 
 NIST
-+1
 
 Note : des résultats de recherche récents peuvent réduire le nombre de qubits nécessaires (voir travaux de 2024–2025) — cela accélère la chronologie potentielle et renforce l’urgence de préparations pragmatiques. 
 The Quantum Insider
@@ -189,13 +187,11 @@ pages.cs.wisc.edu
 
 Le NIST a piloté un processus de normalisation depuis 2016 et a sélectionné des candidats finaux. Les principaux algorithmes choisis pour normalisation (chiffrement/KEM et signatures) comprennent CRYSTALS-Kyber, CRYSTALS-Dilithium, Falcon, SPHINCS+, avec documents et spécifications publiés par le NIST. L’effort de normalisation est en cours d’intégration dans standards gouvernementaux et industriels. 
 NIST
-+1
 
 ## 5.2 Attaques et maturité : prudence nécessaire
 
 Plusieurs algorithmes finalistes ont été cassés (ou fortement révisés) lors de l’évaluation cryptanalytique (ex. SIKE a subi une attaque efficace — Castryck-Decru). Ceci illustre que réussir la normalisation ne garantit pas l’immuabilité : toute proposition doit traverser des années d’analyse. 
 math.mit.edu
-+1
 
 ## 5.3 Contraintes pratiques de la PQC
 
@@ -210,9 +206,6 @@ Cryptographie quantique (QKD) : promesses et limites pratiques
 
 QKD promet une distribution de clé avec sécurité physique (détection d’interception); cependant : portée limitée, coût élevé, intégration complexe dans réseaux existants, et vulnérabilités de mise en œuvre (atténuations, attaques sur composants). En pratique, QKD est utile pour certains cas d’usage hautement sensibles, mais ne constitue pas aujourd’hui une solution universelle. (Voir évaluations nationales et études d’agences comme l’ANSSI.) 
 pages.cs.wisc.edu
-+1
-
-Le talon d’Achille : vulnérabilités pratiques et humaines (études de cas)
 
 ------------------------------------------------------------------------
 
@@ -231,7 +224,6 @@ défense).
 
 Les attaques par temps d’exécution, consommation électrique, émissions électromagnétiques, et even acoustique extraient des secrets d’implémentations réelles. Paul Kocher et al. ont documenté les attaques de timing et de Differential Power Analysis (DPA) qui, en pratique, forcent des modifications d’implémentation et des contre-mesures matérielles. 
 paulkocher.com
-+1
 
 Exemple technique : une implémentation RSA qui ne masque pas les opérations multiplicatives peut révéler bits de la clé via corrélation entre consommation et opérations; des techniques de masquage/blinding et d’exécution constante sont nécessaires.
 
@@ -239,13 +231,11 @@ Exemple technique : une implémentation RSA qui ne masque pas les opérations mu
 
 Ces vulnérabilités microarchitecturales (exécution spéculative, prédiction de branchement) ont permis l’exfiltration de données sensibles en mémoire, démontrant que la sécurité peut être compromise à des couches inattendues (CPU). Les correctifs sont coûteux et certains remèdes impliquent un compromis performance/sécurité. 
 spectreattack.com
-+1
 
 ## 7.2 Erreurs d’implémentation et vulnérabilités industrielles — ROCA
 
 La vulnérabilité ROCA (2017) montre qu’une mauvaise implémentation de génération de clés dans une bibliothèque matérielle (Infineon RSALib) a produit des clés RSA vulnérables malgré l’algorithme mathématiquement sûr. La leçon : l’analyse de la chaîne d’implémentation est cruciale. 
 ncsc.gov.uk
-+1
 
 ## 7.3 Facteur humain et gouvernance (PKI, mots de passe, procédures)
 
@@ -266,11 +256,9 @@ Kudelski Security Research
 
 Une autre estimation publiée dans PostQuantum.com mentionne qu’environ 20 millions de qubits physiques pourraient suffire à casser RSA-2048 en 8 heures, si l’on assume des qubits avec correction d'erreur (noisy qubits) et une architecture qui permet cette durée de cohérence. 
 PostQuantum.com
-+1
 
 Une avancée plus récente (Chevignard et al., 2024) propose une réduction du nombre de qubits logiques nécessaires à environ 1 730 pour un module RSA-2048 en utilisant des optimisations importantes, mais cela s’accompagne d’un circuit très profond, d’un nombre élevé de portes Toffoli, et d’un grand nombre d’exécutions (répétitions), ce qui ralentit énormément le temps total. 
 PostQuantum.com
-+1
 
 Ces données montrent que, bien que l’on fasse des progrès, la construction d’un ordinateur quantique capable d’exécuter Shor sur RSA-2048 dans un délai opérationnel (quelques heures) reste hors de portée pour le moment.
 
