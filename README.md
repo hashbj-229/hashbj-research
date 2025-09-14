@@ -363,7 +363,7 @@ La Quantum Key Distribution (QKD) permet d'échanger des clés de manière
 très sûre, mais seulement dans des situations limitées. Même avec ces
 techniques, aucun système réel n'est complètement inviolable. La
 sécurité dépend toujours de la bonne mise en œuvre, de la gestion des
-clés et d'une surveillance régulière (Shannon, 1949 , NIST PQC Project
+clés et d'une surveillance régulière (Shannon, 1949 , NIST PQC Project)
 
 ## 12- Perspectives et Prévisions
 
