@@ -1,6 +1,4 @@
 # hashbj-research
-Avec les avancées technologiques actuelles, pourrait-on créer une cryptographie infaillible ?
-[Avec_les_avancees_technologiques.md](https://github.com/user-attachments/files/22322955/Avec_les_avancees_technologiques.md)
 Avec les avancées technologiques actuelles, pourrait-on créer une
 cryptographie infaillible ?
 
