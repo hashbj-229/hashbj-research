@@ -2,7 +2,7 @@
 Avec les avancées technologiques actuelles, pourrait-on créer une
 cryptographie infaillible ?
 
-*Rédigé par : Welman GBAGUIDI, Hector SEDO, Destin ATCHAHOUE*
+*Rédigé par : l'équipe Hashbj*
 
 ------------------------------------------------------------------------
 
